@@ -1,0 +1,62 @@
+body {
+    /*Establece la fuente o tipo de letra.*/
+    font-family: Arial, Helvetica; /*Si no encuentra Arial, va a tener Herlvetica. los navegadores intentan mostrar 
+                                     el texto con la primera fuente y si no está disponible, intentan utilizar la 
+                                     segunda fuente y así sucesivamente hasta la última fuente indicada.*/
+    /*Color de fondo*/
+    background: #e8e8e8;
+}
+
+.menu {
+    /*Establece algunas o todas las propiedades del marcador de los elementos de la lista.*/
+    list-style: none; /*Para que no aparezca algo se utiliza none.*/
+    
+    /*auto es reemplazado por algún valor apropiado.*/
+    margin: auto; /*Esto hace que el menu se quede centrado.*/
+    
+    padding: 0; /*Gracias a que el padding es cero, los ítems estarán pegados al margin.*/
+    
+    background: #092327;
+    
+    /*Ancho*/
+    width: 90%;
+    
+    /*Limita la anchura máxima de los elementos de bloque.*/
+    max-width: 1000px; /*No olvides que cuando agrandas la pantalla, el bloque también se agranda, así que con esto le damos un máximo.*/
+    
+}
+
+.menu li a {
+
+    /*Se usa para establecer el formato de texto a subrayado ( underline ) y suprarrayado ( overline ), tachado ( line-through ) 
+      o parpadeo ( blink ).*/
+    text-decoration: none; /*Al poner none, le estamos quitanto el subrayado a los ítems, pues son enlaces.*/
+
+    /*Color del texto.*/
+    color: white;
+
+    padding: 20px;
+
+
+    /*El elemento es mostrado como un elemento block, o sea como los párrafos o encabezados siempre fueron mostrados. Un elemento block siempre 
+      tiene algo de espacio por encima y debajo, que lo separa de los demás elementos, y no acepta ningún otro elemento a su lado.*/
+    display: block;
+}
+
+.menu li {
+
+    /*Crea cajas que son de bloque y en línea de forma simultánea. Una caja de tipo inline-block se comporta como si fuera de bloque, pero respecto 
+      a los elementos que la rodean es una caja en línea.*/
+    display: inline-block;
+
+    /*Establece la alineación del contenido de un elemento de bloque.*/
+    text-align: center;
+
+
+}
+
+/*Cuando pasemos el mouse por .menu li a, se cambiarán sus estilos.*/
+.menu li a:hover {
+
+    background: orange;
+}
